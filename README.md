@@ -8,7 +8,7 @@ CISC-LaTeX Setting
 
 * windows環境下，不需使用字體檔
   ```
-  \setCJKmainfont{標楷體}
+  \setCJKmainfont{DFKai-SB}
   ```
 
 * 其他環境，請將`kaiu.ttf` 放在同個資料夾下
