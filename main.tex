@@ -1,0 +1,78 @@
+\documentclass[10pt, a4paper, twocolumn]{article}
+\usepackage[margin=2.5cm]{geometry}
+\setlength\columnsep{0.5cm}
+\linespread{1}
+
+\newcommand{\authorfont}{\fontsize{12pt}{1}\bfseries}
+
+% chinese font
+\usepackage{fontspec}
+\usepackage{xeCJK}
+% windows text
+%\setCJKmainfont{標楷體}
+% overleaf or not windows environment
+\setCJKmainfont[AutoFakeBold=2,AutoFakeSlant=.4]{[kaiu.ttf]}
+\setmainfont{Times New Roman}
+
+\usepackage{titlesec}
+
+\titleformat{\section}
+  {\fontsize{12pt}{15}\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+ {\fontsize{11pt}{15}\bfseries}{\thesubsection}{1em}{}
+  \titleformat{\subsubsection}
+ {\fontsize{11pt}{15}\bfseries}{\thesubsubsection}{1em}{}
+
+\renewcommand\thesection{\arabic{section}.}
+\renewcommand\thesubsection{\thesection\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\usepackage[font={bf}, labelsep=space]{caption}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+
+\renewcommand{\abstractname}{摘要}
+\renewcommand{\refname}{參考文獻}
+\renewcommand{\figurename}{圖}
+\renewcommand{\tablename}{表}
+
+% abstract
+\usepackage{abstract}
+\renewcommand{\abstractnamefont}{\fontsize{12pt}{15}\bfseries}
+\renewcommand{\abstracttextfont}{\fontsize{10pt}{15}}
+\setlength{\absleftindent}{0pt}
+\setlength{\absrightindent}{0pt}
+
+\date{}
+\begin{document}
+\title{\fontsize{16pt}{1}\selectfont\textbf{全國資訊安全會議}}
+
+\DeclareRobustCommand*{\IEEEauthorrefmark}[1]{%
+  \raisebox{0pt}[0pt][0pt]{\textsuperscript{\footnotesize #1}}%
+}
+
+\author{\authorfont{
+    \IEEEauthorblockN{author1\IEEEauthorrefmark{1}, author2\IEEEauthorrefmark{2}}}
+    \\\authorfont{\IEEEauthorblockA{affiliation\IEEEauthorrefmark{1, 2}}
+    \\\authorfont{email1\IEEEauthorrefmark{1}}
+    \\\authorfont{email2\IEEEauthorrefmark{2}}
+    }
+}
+
+\maketitle
+\pagestyle{empty}
+\thispagestyle{empty}
+\begin{abstract}
+
+\newline
+\textbf{關鍵字:}
+\end{abstract}
+
+
+\section{前言}
+\section{相關文獻}
+
+\bibliography{IEEEabrv,reference}
+\bibliographystyle{abbrv}
+
+\end{document}
