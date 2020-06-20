@@ -11,7 +11,7 @@ CISC-LaTeX Setting
   \setCJKmainfont{DFKai-SB}
   ```
 
-* 其他環境，請將`kaiu.ttf` 放在同個資料夾下
+* 其他環境，將標楷體字型(ttf檔)放在同個資料夾下，`kaiu.ttf`為字體檔名
   ```
   \setCJKmainfont[AutoFakeBold=2,AutoFakeSlant=.4]{[kaiu.ttf]}
   ```
