@@ -3,6 +3,7 @@ CISC-LaTeX Setting
 
 根據 2020 全國資訊安全會議投稿的格式規定 [word範例](https://cisc2020.ccisa.org.tw/CISC2020_format-0121rev.doc)
 
+**請使用XeLaTex編譯**
 
 ### 中文字體設定
 

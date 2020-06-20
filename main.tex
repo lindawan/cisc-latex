@@ -3,8 +3,7 @@
 \usepackage[margin=2.5cm]{geometry}
 \setlength\columnsep{0.5cm}
 \linespread{1}
-
-\newcommand{\authorfont}{\fontsize{12pt}{1}\bfseries}
+\usepackage[]{authblk}
 
 % chinese font
 \usepackage{fontspec}
@@ -48,17 +47,14 @@
 \begin{document}
 \title{\fontsize{16pt}{1}\selectfont\textbf{全國資訊安全會議}}
 
-\DeclareRobustCommand*{\IEEEauthorrefmark}[1]{%
-  \raisebox{0pt}[0pt][0pt]{\textsuperscript{\footnotesize #1}}%
-}
-
-\author{\authorfont{
-    \IEEEauthorblockN{author1\IEEEauthorrefmark{1}, author2\IEEEauthorrefmark{2}}}
-    \\\authorfont{\IEEEauthorblockA{affiliation\IEEEauthorrefmark{1, 2}}
-    \\\authorfont{email1\IEEEauthorrefmark{1}}
-    \\\authorfont{email2\IEEEauthorrefmark{2}}
-    }
-}
+\author[1]{author1}
+\author[2]{author2}
+\affil[ ]{affiliation\textsuperscript{1, 2}}
+\affil[ ]{email1\textsuperscript{1}}
+\affil[ ]{email2\textsuperscript{2}}
+\renewcommand{\Affilfont}{\fontsize{12pt}{1}\bfseries}
+\renewcommand{\Authfont}{\fontsize{12pt}{1}\bfseries}
+\renewcommand\Authand{, }
 
 \maketitle
 \pagestyle{empty}
