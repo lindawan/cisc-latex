@@ -27,6 +27,8 @@
 \renewcommand\thesubsection{\thesection\arabic{subsection}}
 \renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
 
+\setlength{\parindent}{2em}
+
 \usepackage[font={bf}, labelsep=space]{caption}
 \usepackage{graphicx}
 \usepackage{indentfirst}
@@ -61,7 +63,8 @@
 \affil[ ]{email2\textsuperscript{2}}
 \renewcommand{\Affilfont}{\fontsize{12pt}{1}\bfseries}
 \renewcommand{\Authfont}{\fontsize{12pt}{1}\bfseries}
-\renewcommand\Authand{, }
+\renewcommand*{\Authand}{, }
+\renewcommand*{\Authands}{, }
 \setlength{\affilsep}{1mm}
 
 \maketitle

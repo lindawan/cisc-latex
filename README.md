@@ -16,3 +16,9 @@ CISC-LaTeX Setting
   ```
   \setCJKmainfont[AutoFakeBold=2,AutoFakeSlant=.4]{[kaiu.ttf]}
   ```
+
+### 更新說明
+
+* [200630] 修正段落首行縮排字元數、修正最後一位作者出現```and```
+* [200624] 增加演算法與列表標號中文
+* [200620] 調整作者之間的間距大小、更新作者寫法以支援本地端Texmaker
